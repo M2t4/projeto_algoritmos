@@ -42,23 +42,32 @@ for i in range(1,numero+1,1):
 print(resultado)
 
 #verificando numero primo
-flag = 0
+flag = 1
 i = 2
 n = 11
-#for i in (n/2):
+
+for i in range(2,n):
+    if(n%i == 0):
+        flag = 0
+        i += 1
+if(flag == 0):
+    print("não é primo")
+else:
+    print("é primo")    
+    
     
 #fibonacci
-n <= 1000
+n = 1000
 penultimo = 1
 ultimo = 1
 
 if (n==1) or (n==2):
     print("1")
 else:
-    for count in range(2,n):
+    for a in range(2,n):
         termo = ultimo + penultimo
         penultimo = ultimo
         ultimo = termo
-        count += 1
+        a += 1
     print(termo)
    
