@@ -48,17 +48,17 @@ n = 11
 #for i in (n/2):
     
 #fibonacci
-n <= 1000
+n = 1000
 penultimo = 1
 ultimo = 1
 
 if (n==1) or (n==2):
     print("1")
 else:
-    for count in range(2,n):
+    for a in range(2,n):
         termo = ultimo + penultimo
         penultimo = ultimo
         ultimo = termo
-        count += 1
+        a += 1
     print(termo)
    
